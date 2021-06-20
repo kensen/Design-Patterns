@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod
 {
-   public class HumanFactory<T> where T:Human ,new()
+ 
+    /// <summary>
+    /// 简单工厂方法变体泛型实现
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    public class HumanFactory<T> where T:Human ,new()
     {
         public Human CreateHuman()
         {
